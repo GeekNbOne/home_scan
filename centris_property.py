@@ -33,5 +33,17 @@ cp = CentrisProperty(html)
 print(cp.property_type)
 
 
+from requests import Session
+
+session = Session()
+
+res = session.get('https://passerelle.centris.ca/redirect.aspx?&CodeDest=VIACAPITALE&NoMLS=14318834&Lang=E&source=centris.ca')
+
+print(res.text)
+
+
+
+
+
 
 
